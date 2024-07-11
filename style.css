@@ -1,0 +1,413 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #161617;
+}
+
+/* Menu */
+.content {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #161617;
+  position: fixed;
+  padding-left: 30rem;
+}
+
+span {
+  color: #ffc506;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.logo h3 {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.content .list-menu {
+  width: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content .list-menu li a {
+  padding: 3rem 1rem 2rem 1rem;
+  color: #edeaef;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  transition: all 200ms ease-in;
+}
+
+.content .list-menu li a:hover {
+  background-color: #353436;
+  border-bottom: 4px solid #ffc506;
+  color: #ffc506;
+}
+
+/* seções */
+.first-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-image: linear-gradient(to top, rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.2)), url("img/fundopizza.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position-y: 5rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-section .conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-section h1 {
+  color: #ffc506;
+  font-size: 5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.first-section h2 {
+  color: #edeaef;
+  font-size: 3rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  width: 40rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn button {
+  width: 18rem;
+  height: 4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #ffc506;
+  border-radius: 0.5rem;
+  color: #353436;
+  font-weight: 700;
+  margin-top: 2rem;
+  transition: all 0.4s ease-in;
+}
+
+.btn button:hover {
+  background-color: transparent;
+  border-bottom: 1px solid #ffc506;
+  color: #fefbff;
+}
+
+/* About */
+.about {
+  background-color: #353436;
+  width: 100%;
+  padding-bottom: 5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about img {
+  width: 400px;
+  height: 400px;
+  margin-top: 10rem;
+  margin-left: 10rem;
+  border: 1px solid #edeaef;
+  border-radius: 5rem;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contentabout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60rem;
+}
+
+.contentabout h2 {
+  font-size: 6rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.contentabout p {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/* cardapio */
+.cardapio {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  background-color: #161617;
+}
+
+.cardapio h2 {
+  font-size: 5rem;
+  font-weight: 100;
+  color: #edeaef;
+  text-transform: uppercase;
+}
+
+.itens-cardapio {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8rem;
+}
+
+.itens-cardapio .info {
+  background-color: #edeaef;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+  padding: 1.5rem;
+}
+
+.itens-cardapio .info h3 {
+  font-size: 1.8rem;
+  color: #ffc506;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 1.3rem;
+}
+
+.itens-cardapio .info h4 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  margin-top: 1rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 150px 50px;
+}
+
+.itens-cardapio img {
+  width: 50rem;
+  height: 30rem;
+}
+
+.itens-cardapio .info .pedir {
+  width: 12rem;
+  height: 4rem;
+  margin-top: 1rem;
+  color: #fefbff;
+  background-color: #ffc506;
+  border-radius: 3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all ease-out 0.8s;
+}
+
+.itens-cardapio .info .pedir:hover {
+  background-color: #353436;
+}
+
+.contatos {
+  width: 100%;
+  background-color: #353436;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #edeaef;
+  font-size: 1.8rem;
+  padding-bottom: 4rem;
+}
+
+.contatos h3 {
+  font-size: 6rem;
+  margin-bottom: 3rem;
+  font-weight: 100;
+}
+
+.itens-contatos {
+  width: 60rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.itens-contatos i {
+  padding: 1rem;
+}
+
+.itens-contatos div:hover {
+  color: #ffc506;
+  animation: pulse 0.8s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1);
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #161617;
+  color: #edeaef;
+  height: 10rem;
+  font-size: 1.6rem;
+}
+
+footer h4 {
+  font-weight: 200;
+}
+
+.footer-back {
+  background-color: aliceblue;
+  padding: 0.9rem 2rem;
+  border-radius: 5rem;
+}
+
+@media (max-width: 1200px) {
+  .main {
+    display: block;
+  }
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 12%;
+    padding-left: 1.2rem;
+  }
+  .logo {
+    padding-right: 1rem;
+  }
+}
+@media (max-width: 972px) {
+  html {
+    font-size: 50%;
+  }
+  .about img {
+    margin-left: 5rem;
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+  }
+  .content .list-menu {
+    display: none;
+  }
+  .one, .two, .three {
+    width: 80%;
+    height: 2px;
+    background-color: #edeaef;
+    margin: 6px auto;
+    transition: 0.5s;
+  }
+  .menu-toggle {
+    width: 5rem;
+    height: 2rem;
+  }
+  .content.on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(30, 31, 30, 0.8);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content.on .logo {
+    display: none;
+  }
+  .content.on .menu-toggle {
+    position: absolute;
+    right: 4rem;
+    top: 1.5rem;
+  }
+  .content.on .list-menu {
+    display: block;
+  }
+  .content.on .list-menu li a {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+  }
+  .content.on .menu-toggle .two {
+    opacity: 0;
+  }
+  .content.on .menu-toggle .one {
+    transform: rotate(45deg) translate(5px, -8px);
+  }
+  .content.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(20px, -6px);
+  }
+  .itens-contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
