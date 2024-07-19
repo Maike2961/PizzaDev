@@ -267,6 +267,22 @@ span{
     background-color: $black-light;
 }
 
+.carrinho{
+    display: none;
+}
+
+.carrinho.on{
+    display: flex;  
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+}
+
+.carrinho-image img{
+    width: 8rem;
+}
+
 .contatos{
     width: 100%;
     background-color: $black-light;
