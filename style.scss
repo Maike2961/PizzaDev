@@ -190,6 +190,7 @@ span{
 .cardapio{
     width: 100vw;
     display: flex;
+    padding-top: 2rem;
     flex-direction: column;
     align-items: center;
     justify-self: center;
@@ -271,17 +272,96 @@ span{
     display: none;
 }
 
+.carrinho h3{
+    font-size: 4rem;
+    font-weight: 200;
+}
+
+
 .carrinho.on{
     display: flex;  
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
+    gap: 5rem;
     align-items: center;
     background-color: beige;
 }
 
+
 .carrinho-image img{
     width: 8rem;
+    margin-top: 1rem;
 }
+
+.carrinho-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.pizza-pedido{
+    width: 100%;
+}
+
+.pizza-pedido thead tr th{
+    font-size: 2.5rem;
+    font-weight: 300;
+
+}
+
+.pizza-qtd-input{
+    width: 5rem;
+}
+
+.pizza-pedido tbody tr td{
+    text-align: center;
+}
+
+
+.total{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.total .btn{
+    width: 15rem;
+    padding: 2rem;
+    background-color: $yellow-normal;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: .30rem;
+    cursor: pointer;
+}
+
+.menu-carrinho{
+    width: 5rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.menu-carrinho .one, .menu-carrinho .three{
+    width: 80%;
+    height: 2px;
+    background-color: $black-dark;
+    margin: 6px auto;
+    transition: 0.5s;
+}
+
+.menu-carrinho .one{
+    transform: rotate(45deg) translate(5px, -13px);
+}
+
+.menu-carrinho .three{
+    transform: rotate(-45deg) translate(20px, -1px);
+}
+
 
 .contatos{
     width: 100%;
@@ -373,6 +453,10 @@ footer h4{
 }
 
 @media (max-width:768px){
+    .first-section h1, .first-section h2{
+        text-align: center;
+        font-size: 5rem;
+    }
     .content{
         display: flex;
         flex-direction: row;

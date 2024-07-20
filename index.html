@@ -30,7 +30,7 @@
                 <li><a href="#contatos">Contatos</a></li>
                 <li><a href="#"><i class="bi bi-facebook"></i></a></li>
                 <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                <li><a href="#" id="#carrinho"><i class="bi bi-cart2"></i></a></li>
+                <li><a href="#carrinho" id="#carrinho"><i class="bi bi-cart2"></i></a></li>
             </ul>
         </nav>
 
@@ -47,18 +47,24 @@
             <h2>As pizzas mais recheadas da região</h2>
 
             <div class="btn">
-                <button class="reservar">Reserve a sua</button>
-                <button class="montar">Montar a sua pizza</button>
+                <a href="#contatos"><button class="reservar">Ligue para nós</button></a>
+                <a href="#cardapio"><button class="montar">Peça a sua pizza</button></a>
             </div>
         </div>
     </section>
 
-    <section class="about", id="about">
+    <section class="about" , id="about">
         <div class="main">
             <div class="contentabout">
                 <h2>Sobre nós</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos deserunt laborum natus possimus nulla aliquid provident dolorem minima reprehenderit repellendus neque temporibus omnis voluptates ipsa obcaecati, quae deleniti rerum quis
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eum quas quo ullam dolor aperiam iste ipsam ut necessitatibus consequuntur eaque doloremque velit, fugiat molestias earum et ipsa repellendus inventore!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, tempore minus, possimus blanditiis aspernatur, nobis exercitationem quos quibusdam autem hic doloremque et illum deleniti dignissimos odit. Possimus numquam nisi aperiam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos deserunt laborum natus possimus nulla
+                    aliquid provident dolorem minima reprehenderit repellendus neque temporibus omnis voluptates ipsa
+                    obcaecati, quae deleniti rerum quis
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eum quas quo ullam dolor aperiam
+                    iste ipsam ut necessitatibus consequuntur eaque doloremque velit, fugiat molestias earum et ipsa
+                    repellendus inventore!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, tempore minus,
+                    possimus blanditiis aspernatur, nobis exercitationem quos quibusdam autem hic doloremque et illum
+                    deleniti dignissimos odit. Possimus numquam nisi aperiam.</p>
             </div>
             <div class="imgabout">
                 <img src="/img/cozinha.jpg" alt="sobre">
@@ -68,20 +74,24 @@
 
     <section class="cardapio" id="cardapio">
         <h2>Cardápio</h2>
-        <aside class="carrinho">
+        <aside class="carrinho" id="carrinho">
             <h3>Carrinho</h3>
             <table class="pizza-pedido">
                 <thead>
                     <tr>
                         <th>Pizza</th>
+                        <th>Quantidade</th>
                         <th>Fatias</th>
-                        <th>Preco</th>
                     </tr>
                 </thead>
                 <tbody id="lista">
 
                 </tbody>
             </table>
+            <div class="total">
+                <h3>Total: R$<span id=total></span></h3>
+                <button class="btn">Finalizar</button>
+            </div>
         </aside>
         <div class="itens-cardapio">
             <div>
@@ -117,7 +127,7 @@
                 </div>
             </div>
 
-            <div >
+            <div>
                 <img src="/img/strogonoff-removebg-preview.png" alt="franguinho" class="pizza-image">
                 <div class="info">
                     <h3>Strogonoff</h3>
@@ -128,7 +138,7 @@
                 </div>
             </div>
 
-            <div >
+            <div>
                 <img src="/img/chocolate-removebg-preview.png" alt="franguinho" class="pizza-image">
                 <div class="info">
                     <h3>Chocolate</h3>
@@ -139,7 +149,7 @@
                 </div>
             </div>
 
-            <div >
+            <div>
                 <img src="/img/sensacao-removebg-preview.png" alt="franguinho" class="pizza-image">
                 <div class="info">
                     <h3>Sensação</h3>
@@ -150,7 +160,7 @@
                 </div>
             </div>
 
-            <div >
+            <div>
                 <img src="/img/confete-removebg-preview.png" alt="franguinho" class="pizza-image">
                 <div class="info">
                     <h3>Confete</h3>
@@ -161,7 +171,7 @@
                 </div>
             </div>
 
-            <div >
+            <div>
                 <img src="/img/prestigio-removebg-preview.png" alt="franguinho" class="pizza-image">
                 <div class="info">
                     <h3>Prestigio</h3>
@@ -182,13 +192,13 @@
                 <span>(15) 94975-5555</span>
             </div>
 
-            
+
             <div>
                 <i class="bi bi-facebook"></i>
                 <span>Pizzaria Dev</span>
             </div>
 
-            
+
             <div>
                 <i class="bi bi-tiktok"></i>
                 <span>PizzariaDev</span>
@@ -198,9 +208,11 @@
 
     <footer>
         <h4>Desenvolvido por <span>Mayki Costa</span></h4>
-        <div class="footer-back">
-            <a href="#home"><i class="bi bi-arrow-up"></i></a>
-        </div>
+        <a href="#home">
+            <div class="footer-back">
+                <i class="bi bi-arrow-up"></i>
+            </div>
+        </a>
     </footer>
 
     <script src="script.js"></script>
