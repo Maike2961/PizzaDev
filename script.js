@@ -64,7 +64,18 @@ const calcular = () =>{
     });
     console.log(soma)
     total.innerHTML = soma.toFixed(2)
-    
+}
+
+const finalizarPedido = () =>{
+    const finaliza = document.querySelector(".button")
+    console.log(finaliza)
+    const carro = document.querySelector(".carrinho.on")
+    finaliza.addEventListener('click', function(){
+        alert("Parabéns pedido finalizado")
+        setTimeout(()=>{
+            carro.classList.remove('on')
+        },1000)
+    })
 }
 
 
@@ -76,6 +87,7 @@ function abrircarrinho(event) {
     carro.style.height = "60vh"
     show = !show;
     fecharcarrinho()
+    finalizarPedido()
 }
 
 function fecharcarrinho(){
