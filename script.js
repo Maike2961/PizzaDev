@@ -1,6 +1,10 @@
 const pedirToogle = document.getElementsByClassName("pedir")
+const secao = document.getElementById("carrinho")
 for (let i = 0; i < pedirToogle.length; i++) {
     pedirToogle[i].addEventListener("click", adicionarPizza)
+    pedirToogle[i].addEventListener("click", ()=>{
+        secao.scrollIntoView({behavior: "smooth"})
+    })
 }
 
 function adicionarPizza(event) {
