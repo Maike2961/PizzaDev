@@ -12,10 +12,9 @@
 html {
   width: 100vw;
   height: 100vh;
-  font-size: 62.5%;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
   background-color: #161617;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 /* Menu */
@@ -463,8 +462,9 @@ footer h4 {
     transition: 0.5s;
   }
   .menu-toggle {
-    width: 5rem;
+    width: 7rem;
     height: 2rem;
+    padding-right: 2.5rem;
   }
   .content.on {
     position: fixed;
